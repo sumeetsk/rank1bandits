@@ -1,6 +1,4 @@
 from __future__ import absolute_import, division, print_function
-import sys
-sys.path.append('../../../')
 from algs.rank1elimKL import Rank1ElimKL
 import numpy as np
 import copy
