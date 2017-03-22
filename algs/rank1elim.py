@@ -107,7 +107,7 @@ class Rank1Elim:
                 self.active_cols = self.active_cols[selc]
             
             old_gap = self.gap
-            self.gap /= 2.
+            self.gap /= 2
             self.budget = np.ceil(4 * np.log(self.T) / (self.gap ** 2)) - \
                 np.ceil(4 * np.log(self.T) / (old_gap ** 2))
             self.bandit = self.EXPLORE_ROWS
