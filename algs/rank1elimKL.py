@@ -103,7 +103,7 @@ class Rank1ElimKL:
                 self.active_cols = self.active_cols[selc]
             
             old_gap = self.gap
-            self.gap /= 2.
+            self.gap /= 2
             #self.budget = np.ceil(4 * np.log(self.T) / (self.gap ** 2)) - \
             #    np.ceil(4 * np.log(self.T) / (old_gap ** 2))
             self.budget = np.ceil(16 * np.log(self.T) / (self.gap ** 2)) - \
@@ -113,7 +113,6 @@ class Rank1ElimKL:
             self.i = self.active_rows[self.active]
             self.j = self.col_defeat[np.random.randint(0, L)]
             
-#             print("Time:", t, "\nGap:", self.gap, "\nRows:", self.row_index, "\nColumns:", self.col_index)
             
     def get_action(self, t):
         return (self.i, self.j)
