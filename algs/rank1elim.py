@@ -115,7 +115,6 @@ class Rank1Elim:
             self.i = self.active_rows[self.active]
             self.j = self.col_defeat[np.random.randint(0, L)]
             
-#             print("Time:", t, "\nGap:", self.gap, "\nRows:", self.row_index, "\nColumns:", self.col_index)
             
     def get_action(self, t):
         return (self.i, self.j)
