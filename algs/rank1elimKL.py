@@ -19,7 +19,7 @@ class Rank1ElimKL:
         
         self.EXPLORE_ROWS = 0
         self.EXPLORE_COLS = 1
-        self.gap = 1
+        self.gap = 1.
         #self.budget = np.ceil(2 * np.log(self.T * (self.gap ** 2)) / (self.gap ** 2))
         self.budget = np.ceil(16 * np.log(self.T ) / (self.gap ** 2))
         self.bandit = self.EXPLORE_ROWS
